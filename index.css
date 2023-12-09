@@ -1,119 +1,114 @@
-/* Add styles for the Body component */
 .Body {
-    display: flex;
-  }
-  
-  /* Add styles for each status column */
-  .statusColumn {
-    flex: 1;
-    margin: 16px;
-    padding: 16px;
-   
-    border-radius: 8px;
+  display: flex;
+}
 
-  }
-  
-  .statusColumn h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 16px;
-  }
-  
-  /* Optional: Adjust the appearance of UserCard components within each column */
-  .userCard {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 8px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .userCard h1 {
-    color: #333;
-    font-size: 1.2em;
-  }
-  
-  .userCard h2 {
-    color: #555;
-    font-size: 1em;
-  }
-  
-  .userCard h2:last-child {
-    color: #777;
-  }
-  
-  /* Optional: Hover effect on UserCard components */
-  .userCard:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-    transition: box-shadow 0.3s, transform 0.3s;
-  }
-  
-  .countBadge {
-    position: absolute;
-    color: #666666; /* Set badge text color */
-    padding: 6px 10px;
-    border-radius: 12px;
-    font-size: 0.8em;
-  }
+.statusColumn {
+  flex: 1;
+  margin: 16px;
+  padding: 16px;
 
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* Change justify-content to space-between for even distribution */
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  button.active {
-    background-color: #4caf50;
-  }
-  
-  #by-Priority {
-    margin-left: auto; /* Push this button to the right corner */
-  }
-  
-  #by-name {
-    margin-right: 5px; /* Add small margin to separate it from "by-Priority" */
-  }
-  .top{
-    display: flex;
-    justify-content: space-between; 
-    
-  }
-  .bottom{
-    display: flex;
-  }
-    
-  .icon-container {
-    border: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      border-radius: 10px;
-    }
-    
-  .feature-request-box {
-      border: 1px solid #ccc; /* Add border or other styles as needed */
-      padding: 5px; /* Add padding as needed */
-      margin-left: 5px;
-      border-radius: 10px;
-  }
-  .columnHead{
-    display: flex;
-    justify-content: space-between; 
-    
+  border-radius: 8px;
+}
 
-  }
+.statusColumn h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
 
+.userCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-   
+.userCard h1 {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.userCard h2 {
+  color: #555;
+  font-size: 1em;
+}
+
+.userCard h2:last-child {
+  color: #777;
+}
+
+.userCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.countBadge {
+  position: absolute;
+  color: #666666;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #4caf50;
+}
+
+#by-Priority {
+  margin-left: auto;
+}
+
+#by-name {
+  margin-right: 5px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  display: flex;
+}
+
+.icon-container {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.feature-request-box {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.columnHead {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 1em;
+}
+.fontUpdate{
+  color: #555;
+  font-size: 1em;
+}

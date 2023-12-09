@@ -7,29 +7,28 @@ const UserCard = ({ ticket, user }) => {
     <div className="userCard">
       <div className="top">
         <div>
-          <h2>
-            {ticket.id} 
-          </h2>
-        </div> 
-        <IoPeople/>
+          <h2>{ticket.id}</h2>
+        </div>
+        <IoPeople />
       </div>
       <div>
-          <h1>{ticket.title}</h1>
-        </div>
+        <h1>{ticket.title}</h1>
+      </div>
 
       <h2>Assigned to : {user.name}</h2>
 
       <div className="bottom">
         <div>
           <h2>
-            <BsFillExclamationSquareFill className="icon-container"/>
+            <BsFillExclamationSquareFill className="icon-container" />
           </h2>
-        </div> 
-        <h2 className="feature-request-box"><GoDot/>Feature Request</h2>
+        </div>
+        <h2 className="feature-request-box">
+          <GoDot />
+          Feature Request
+        </h2>
       </div>
     </div>
-    
-    
   );
 };
 export default UserCard;

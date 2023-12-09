@@ -1,9 +1,7 @@
-
-import React, { useState,useEffect } from 'react';
-
-const Navbar = ({control,setControl,sort,setSort}) => {
+import React, { useState, useEffect } from "react";
+const Navbar = ({ control, setControl, sort, setSort }) => {
   const [activeButton, setActiveButton] = useState(control);
-  const [activeButtonSort, setActiveButtonSort] = useState('true');
+  const [activeButtonSort, setActiveButtonSort] = useState("true");
   useEffect(() => {
     const storedControl = localStorage.getItem("control");
     const storedSort = localStorage.getItem("sort");
@@ -11,60 +9,56 @@ const Navbar = ({control,setControl,sort,setSort}) => {
       setControl(storedControl);
     }
     setActiveButton(storedControl);
-    if(storedSort) {
-        setSort(storedSort)
+    if (storedSort) {
+      setSort(storedSort);
     }
-    setActiveButtonSort(storedSort)
+    setActiveButtonSort(storedSort);
   }, []);
- 
 
   const handleButtonClick = (button) => {
     setActiveButton(button);
-    setControl(button)
+    setControl(button);
   };
   const handleButtonClickSort = (bool) => {
     setActiveButtonSort(bool);
-    setSort(bool)
+    setSort(bool);
   };
 
   return (
     <div className="navbar">
       <button
-        className={activeButton === 'status' ? 'active' : ''}
-        onClick={() => handleButtonClick('status')}
+        className={activeButton === "status" ? "active" : ""}
+        onClick={() => handleButtonClick("status")}
       >
         Status
       </button>
       <button
-        className={activeButton === 'priority' ? 'active' : ''}
-        onClick={() => handleButtonClick('priority')}
+        className={activeButton === "priority" ? "active" : ""}
+        onClick={() => handleButtonClick("priority")}
       >
         Priority
       </button>
       <button
-        className={activeButton === 'name' ? 'active' : ''}
-        onClick={() => handleButtonClick('name')}
+        className={activeButton === "name" ? "active" : ""}
+        onClick={() => handleButtonClick("name")}
       >
         Name
-    
-      </button>
-      
-      <button
-        className={activeButtonSort === 'true' ? 'active' : ''}
-        id='by-Priority'
-        onClick={() => handleButtonClickSort('true')}
-      >
-       by-Priority
-    
       </button>
 
       <button
-        className={activeButtonSort === 'false'? 'active' : ''}
-        id='by-name'
-        onClick={() => handleButtonClickSort('false')}
+        className={activeButtonSort === "true" ? "active" : ""}
+        id="by-Priority"
+        onClick={() => handleButtonClickSort("true")}
+      >
+        by-Priority
+      </button>
+
+      <button
+        className={activeButtonSort === "false" ? "active" : ""}
+        id="by-name"
+        onClick={() => handleButtonClickSort("false")}
       >
         by-Title
-    
       </button>
     </div>
   );
