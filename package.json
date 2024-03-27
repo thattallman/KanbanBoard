@@ -4,7 +4,7 @@
   "description": "the is Rachit Saxena's assissment ",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --out-dir build"
+    "build": "parcel build index.html "
   },
   "author": "Rachit Saxena ",
   "license": "ISC",
